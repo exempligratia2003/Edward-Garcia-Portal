@@ -1,0 +1,104 @@
+* {
+    font-family: IBM;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2df;
+}
+
+h1,
+h2,
+p {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232946;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    display: block;
+    color: #f7f2df;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #080d20;
+}
+
+ul li a.active {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f7f2df;
+    color: #232946;
+    font-weight: bold;
+}
+
+.content {
+    padding: 80px;
+    color: #232946;
+}
+
+#part2 {
+    background-color: #232946;
+    color: #f7f2df;
+}
+
+#part4, #part5, #part6 {
+    padding-top: 10px;
+    background-color: #f7f2df;
+    color: #232946;
+}
+
+#part5 {
+    padding-bottom: 10px;
+}
+
+.music-embeds {
+    width: 100%;
+}
+
+.button-group {
+    display: flex; justify-content: center; align-items: center;
+}
+
+.site-buttons {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#black-button {
+    background-color: #232946;
+    color: #f7f2df;
+}
+
+#white-button {
+    border:#232946 2px solid;
+    background-color: #f7f2df;
+    color: #232946;
+}
+
+#pink-button {
+    background-color: #eebbcc;
+    color: #232946;
+}
