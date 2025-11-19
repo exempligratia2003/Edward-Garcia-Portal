@@ -1,0 +1,58 @@
+{
+    "latest_releases": [
+        {
+            "id": "latest_release_1",
+            "link": "https://open.spotify.com/track/2lQax5wiaFjrhR67B0PEgZ"
+        },
+        {
+            "id": "latest_release_2",
+            "link": "https://open.spotify.com/track/2u0mov27lmGn1YS8Adm1eg"
+        },
+        {
+            "id": "latest_release_3",
+            "link": "https://open.spotify.com/track/5yI81WKdPLzn5U95AIlueo"
+        }
+    ],
+    "playlists": [
+        {
+            "id": "playlist_1",
+            "link": "https://open.spotify.com/playlist/3oM9zeTSET2GK9YZlDshzD"
+        },
+        {
+            "id": "playlist_2",
+            "link": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0tzCQp"
+        },
+        {
+            "id": "playlist_3",
+            "link": "https://open.spotify.com/playlist/1RNcoIhI2Qr0hGS62ploNi"
+        }
+    ],
+    "albums": [
+        {
+            "id": "album_1",
+            "link": "https://open.spotify.com/album/10xH4qnIYkGtyJce55OBcu"
+        },
+        {
+            "id": "album_2",
+            "link": "https://open.spotify.com/album/4sxzz4Av8njFbdCVWTlaTG"
+        },
+        {
+            "id": "album_3",
+            "link": "https://open.spotify.com/album/0DODGg5oCsZuMQWJc0pA7J"
+        }
+    ],
+    "latest_videos": [
+        {
+            "id": "latest_video_1",
+            "link": "https://www.youtube.com/oazr1-sc5pY"
+        },
+        {
+            "id": "latest_video_2",
+            "link": "https://www.youtube.com/j9p0lIE8F9k"
+        },
+        {
+            "id": "latest_video_3",
+            "link": "https://www.youtube.com/ShJHHK3LjyQ"
+        }
+    ]
+}
