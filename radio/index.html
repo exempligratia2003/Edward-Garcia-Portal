@@ -14,7 +14,13 @@
     <script src="scripts/script1.js"></script>
 
     <div class="topnav">
-        <ul>
+        <a href="#" class="logo">
+            <img src="assets/Main Logo.svg" alt="logo">
+        </a>
+
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul id="nav-menu">
             <li><a href="#">Support</a></li>
             <li><a href="#">My Story</a></li>
             <li><a href="#">Hire Me</a></li>
@@ -40,17 +46,17 @@
         <p>Check out my latest music releases on Spotify, Apple Music, and other platforms.</p>
         <div class="music-embeds" id="latest-music">
             <iframe data-testid="embed-iframe" style="border-radius:10px"
-                src="https://open.spotify.com/embed/track/2lQax5wiaFjrhR67B0PEgZ?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/track/2lQax5wiaFjrhR67B0PEgZ?utm_source=generator" width="100%"
                 height="360" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:10px"
-                src="https://open.spotify.com/embed/track/2u0mov27lmGn1YS8Adm1eg?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/track/2u0mov27lmGn1YS8Adm1eg?utm_source=generator" width="100%"
                 height="360" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:10px"
-                src="https://open.spotify.com/embed/track/5yI81WKdPLzn5U95AIlueo?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/track/5yI81WKdPLzn5U95AIlueo?utm_source=generator" width="100%"
                 height="360" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
@@ -60,17 +66,17 @@
         <h1>Playlists</h1>
         <div class="music-embeds" id="featured-playlists">
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/3oM9zeTSET2GK9YZlDshzD?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/playlist/3oM9zeTSET2GK9YZlDshzD?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tzCQp?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0tzCQp?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/1RNcoIhI2Qr0hGS62ploNi?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/playlist/1RNcoIhI2Qr0hGS62ploNi?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
@@ -80,17 +86,17 @@
         <h1>Albums</h1>
         <div class="music-embeds" id="featured-albums">
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/10xH4qnIYkGtyJce55OBcu?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/album/10xH4qnIYkGtyJce55OBcu?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/4sxzz4Av8njFbdCVWTlaTG?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/album/4sxzz4Av8njFbdCVWTlaTG?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/0DODGg5oCsZuMQWJc0pA7J?utm_source=generator" width="33%"
+                src="https://open.spotify.com/embed/album/0DODGg5oCsZuMQWJc0pA7J?utm_source=generator" width="100%"
                 height="480" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
@@ -107,11 +113,32 @@
                 onclick="window.open('https://www.patreon.com/exempligratia2003')">Buy Music</button>
         </div>
     </div>
+    <div class="content" id="part7">
+        <h1>YouTube Videos</h1>
+        <p>Check out my latest YouTube videos below!</p>
+        <div class="video-embeds" id="latest-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oazr1-sc5pY?si=D_P7CUDnsQxxk7Ge"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j9p0lIE8F9k?si=DCoqlpae3X5tpReD"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ShJHHK3LjyQ?si=eabz9rqJkr8b_B43"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 <footer>
+    <p>Where do you wanna go?</p>
     <div class="quick-access-portal">
-        <a href="#">Radio</a> |
+        <a href="#">Radio</a>
         <a href="#">TV</a>
+    </div>
     <p style="color: #232946;">© 2025 Edward Garcia Radio. All rights reserved.</p>
 </footer>
+
 </html>
