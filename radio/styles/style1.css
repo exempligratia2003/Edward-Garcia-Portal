@@ -32,7 +32,8 @@ p {
     margin: 10px;
 }
 
-ul {
+/* Only style the navbar's UL */
+.topnav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@ ul {
     background-color: #232946;
 }
 
-ul li {
+.topnav ul li {
     float: right;
 }
 
@@ -75,8 +76,78 @@ ul li a {
     padding-bottom: 10px;
 }
 
+div.content#my-story-part1 {
+    padding: 80px;
+    color: #232946;
+    text-align: justify;
+}
+
+div.content#my-story-part1 p,
+div.content#my-story-part2 p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+div.content#my-story-part2 {
+    padding: 80px;
+    background-color: #232946;
+    color: #f7f2df;
+    text-align: justify;
+}
+
+div.content#my-story-part2 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-left: 20px;
+    display: block;
+}
+
+div.content#my-story-part2 ul li {
+    text-align: left;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    /* Should be removed. Only for demonstration */
+}
+
+.left {
+    width: 70%;
+}
+
+.right {
+    width: 30%;
+}
+
+.right li {
+    margin-bottom: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.content#my-story-part3 {
+    padding: 80px;
+    background-color: #b8c1ec;
+    color: #232946;
+    text-align: center;
+}
+
+div.content#my-story-part4 {
+    padding: 80px;
+    background-color: #f7f2df;
+    color: #232946;
+    text-align: center;
+}
+
 /* --- EMBED GRID LAYOUT --- */
-.music-embeds, .video-embeds {
+.music-embeds,
+.video-embeds {
     display: grid;
     grid-template-columns: 1fr;
     /* default: 1 column for mobile */
@@ -85,13 +156,16 @@ ul li a {
 
 /* Desktop: 3 columns */
 @media (min-width: 900px) {
-    .music-embeds, .video-embeds {
+
+    .music-embeds,
+    .video-embeds {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* Make the iframe fill its grid cell */
-.music-embeds iframe, .video-embeds iframe {
+.music-embeds iframe,
+.video-embeds iframe {
     width: 100%;
 }
 
