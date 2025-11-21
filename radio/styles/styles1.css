@@ -1,0 +1,193 @@
+* {
+    font-family: IBM;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    border: none;
+    border-radius: 12px 0px;
+    padding: 16px 20px;
+    font-size: 16px;
+    background-color: #eebbcc;
+    color: #232946;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f7f2df;
+    color: #232946;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #232946;
+    padding: 4px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f7f2df;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 16px 0px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #080d20;
+    color: #f7f2df;
+}
+
+.navbar a.active {
+    background-color: #f7f2df;
+    color: #232946;
+    font-weight: bold;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.page-content {
+    padding: 40px;
+}
+
+.page-content#page-content-1 {
+    background-color: #f7f2df;
+    color: #232946;
+}
+
+.page-content#page-content-2 {
+    background-color: #232946;
+    color: #f7f2df;
+}
+
+/* --- TWO COLUMN RESPONSIVE LAYOUT --- */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Column styling */
+.two-column-layout .column {
+    padding: 20px;
+    background-color: #ebc;
+    /* transparent so your page bg shows */
+    color: #232946;
+    border-radius: 12px 0px;
+}
+
+.two-column-layout .column-no-margin {
+    margin: 0;
+}
+
+.two-column-layout .column-no-margin-y-video {
+    height: 360px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile / small screen: stack to 1 column */
+@media (max-width: 768px) {
+    .two-column-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .two-column-layout .column {
+        padding: 20px;
+    }
+}
+
+/* --- THREE COLUMN RESPONSIVE LAYOUT --- */
+.three-column-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Column styling */
+.three-column-layout .column {
+    padding: 20px;
+    background-color: #ebc;
+    /* transparent so your page bg shows */
+    color: #232946;
+    border-radius: 12px 0px;
+}
+
+.three-column-layout .column-no-margin {
+    height: 360px;
+    padding: 0;
+    margin: 0;
+}
+
+.three-column-layout .column-no-margin-s-album,
+.three-column-layout .column-no-margin-s-playlist {
+    height: 640px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile / small screen: stack to 1 column */
+@media (max-width: 768px) {
+    .three-column-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .three-column-layout .column {
+        padding: 20px;
+    }
+}
+
+footer {
+    background-color: #232946;
+    color: #f7f2df;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #f7f2df;
+    text-decoration: none;
+}
